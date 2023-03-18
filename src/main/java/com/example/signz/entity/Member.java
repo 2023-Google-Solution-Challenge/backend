@@ -49,6 +49,9 @@ public class Member {
     @Column(nullable = false)
     private Double longitude;
 
+//    @OneToMany(mappedBy = "member")
+//    private List<Employer> employers = new ArrayList<>();
+
     public static Member createMember(MemberDto memberDto) {
         Member member = new Member();
         member.setEmail(memberDto.getEmail());
@@ -58,7 +61,7 @@ public class Member {
         member.setNickname(memberDto.getNickname());
         member.setPhone(memberDto.getPhone());
         member.setLatitude(memberDto.getLatitude());
-        member.setLongitude(member.getLongitude());
+        member.setLongitude(memberDto.getLongitude());
         return member;
     }
 }
