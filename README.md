@@ -15,7 +15,7 @@ Before you start, make sure you have installed the following on your system:
 - Android emulator or physical device
 
 ### Installation
-1. Clone the Signz/android repository from GitHub: https://github.com/2023-Google-Solution-Challenge/android.git
+1. Clone the Signz/android repository from GitHub: https://github.com/2023-Google-Solution-Challenge/backend.git
 
 2. 
 
