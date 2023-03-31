@@ -15,10 +15,10 @@ Before you start, make sure you have installed the following on your system:
 - Android emulator or physical device
 
 ### Installation
-1. Clone the Signz/android repository from GitHub:
-    - https://github.com/2023-Google-Solution-Challenge/backend.git
+1. Start GCP VM instance
 
-2. Start GCP VM instance
+2. Clone the Signz/android repository from GitHub:
+    - https://github.com/2023-Google-Solution-Challenge/backend.git
 
 3. Install JAVA
 ```sh
@@ -39,7 +39,7 @@ chmod 755 gradlew
 6. Run Project Server (http://34.22.73.190)
 ```sh
 cd build/libs
-java -jar (파일명).jar
+java -jar signz-0.0.1-SNAPSHOT.jar
  ```
 
 Technology Stack💻
