@@ -15,13 +15,14 @@ Before you start, make sure you have installed the following on your system:
 - Android emulator or physical device
 
 ### Installation
-1. Clone the Signz/android repository from GitHub: https://github.com/2023-Google-Solution-Challenge/backend.git
+1. Clone the Signz/android repository from GitHub:
+    - https://github.com/2023-Google-Solution-Challenge/backend.git
 
-2. Open GCP VM instance(server)
+2. Start GCP VM instance
 
 3. Install JAVA
 ```sh
-sudo apt-get install openjdk-8-jdk
+sudo apt-get install openjdk-15-jdk
 ```
 
 4. Install Gradle
@@ -29,7 +30,17 @@ sudo apt-get install openjdk-8-jdk
 sudo apt-get install gradle
 ```
 
-5.
+5. Gradle build
+```sh
+chmod 755 gradlew
+./gradlew build
+```
+
+6. Run Project Server (http://34.22.73.190)
+```sh
+cd build/libs
+java -jar (파일명).jar
+ ```
 
 Technology Stack💻
 ---
@@ -51,11 +62,11 @@ We divided the problems of the working environment into four categories and focu
 
 - Overdue wages
 
-  Workers may not be properly paid, such as delayed deposit dates or not guaranteed minimum hourly wages. **The value of their work should be appropriately compensated.
+  Workers may not be properly paid, such as delayed deposit dates or not guaranteed minimum hourly wages. The value of their work should be appropriately compensated.
 
 - Exploitation of labor
 
-  During office hours, individuals are sometimes assigned heavy workloads. As a result, workers are placed in busy and poor working conditions. **Follows working hours, lunch hours, and commuting hours.
+  During office hours, individuals are sometimes assigned heavy workloads. As a result, workers are placed in busy and poor working conditions. Follows working hours, lunch hours, and commuting hours.
 
 - Unfair dismissal
 
@@ -85,49 +96,95 @@ Functions
 ---
 
 ### Employer
-#### Main
-
+>#### Main
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/73579002/229065791-858c9ba1-14ef-4411-b3d8-b4013f1e5039.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229062580-15f3bf5c-cf84-4e50-a855-8296f35b8db6.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229062590-87ff210d-a83f-4a27-a369-c5772a72e4df.png" alt="Posts" width="200" height="433.07">
+</div>
+ 
 You can create a job posting.
 Applicants can be identified, also their reliability, badges, and work history can be identified.
 Recruiting is conducted within the application, and a labor contract is prepared.
 You can add and delete workplaces.
 
-#### Calendar
+>#### Calendar
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/73579002/229065338-cd3f6ac2-3cb7-4ab7-826a-2a817dcf6cd9.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229062995-a0966aab-dbd4-465e-af46-bc83087fd772.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229063000-7a358729-97ad-4bab-b68a-8fc71d4905e2.png" alt="Posts" width="200" height="433.07">
+</div>
 
 You can view the attendance of workers at a glance on a calendar.
 The salary management page allows for checking workers' wage details and accounts, as well as completing deposits.
 You can use the application to approve vacation requests and receive continuous notifications to stay updated on their status.
 
-#### Community:
+>#### Community
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/73579002/229064799-28c909ec-47a9-4613-bc60-b25626639d59.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064815-0f634e60-6c51-4de4-9ef3-f7c4a32754fa.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064821-7e700265-adbf-48be-a231-08cf3d096c28.png" alt="Posts" width="200" height="433.07">
+ </div>
 
 There is a community for employers, so they can freely share their opinions with others, and through this, they can seek advice on various problems.
 The application includes essential guides for navigating the working environment, providing access to a wealth of useful information.
 
-#### MyPage
-
+>#### MyPage
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/73579002/229064401-a2a90e49-9288-46ff-8bdf-adbf9ffdfc2c.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064408-1467a254-0122-4cb8-a5b9-7a79d42db245.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064417-e9485724-c648-4243-ab57-470f34416ded.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064422-bcd0d383-5f20-4b74-8f39-793d736412f3.png" alt="Posts" width="200" height="433.07">
+ </div>
+ 
 It provides contract, worker management and salary management functions.
 The application promotes labor awareness by offering educational videos on topics such as worker’s rights, safety, gender education, and awareness. Furthermore, a badge can be awarded based on the user's viewing history to enhance their reliability score.
 You can check the reliability score which takes into account factors such as wage arrears, unfair dismissal, and employee evaluation, can be easily checked.
 
 ### Employee
-#### Main
-<img src="https://user-images.githubusercontent.com/100350128/228934917-d1f8d7a3-403a-4f72-9db6-69b97b24a0ce.png" alt="Posts" width="200" height="433.07">
-
+>#### Main
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/100350128/229069313-109d3511-cd9a-47ca-8380-6c3c25349643.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/100350128/229069336-bb9cd66c-70ac-4bbd-a4ea-c3434777bebf.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/100350128/229070108-22898fc2-7be6-46b6-8799-0ffc349bb0f6.png" alt="Posts" width="200" height="433.07">
+</div>
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/100350128/229069329-b0d006db-f349-405c-9907-3ff99ea97853.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/100350128/229069330-5520b70c-a563-4bd9-a67c-1d4b2256f6a7.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/100350128/229069311-6e5c43b9-58c5-49f8-8f31-9cb8a64b257f.png" alt="Posts" width="200" height="433.07">
+</div>
 
 We provide employment information based on location and specific workplace details, including required information, through job postings and workplace ratings.
 You can report inappropriate workplaces, and we offer assistance to workers in the process.
 We require employment contracts to be written to secure workers' rights and prevent unfair treatment.
 
-#### Calendar
+>#### Calendar
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/100350128/229068476-ef161665-2ae6-4c07-ba61-4a2986e147a4.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/100350128/229068479-c4b7b21b-34b5-4fb6-8729-7866ba140955.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/100350128/229068484-f8f85ae3-36c0-4b54-9147-a4e5a3f86771.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/100350128/229068466-96a7cf2b-f73c-4a42-bb66-2c7429abdcff.png" alt="Posts" width="200" height="433.07">
+</div>
 
 We attendance and salary management to ensure workers' breaks and accurate wages.
 
-#### Community
-
+>#### Community
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/73579002/229064799-28c909ec-47a9-4613-bc60-b25626639d59.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064815-0f634e60-6c51-4de4-9ef3-f7c4a32754fa.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064821-7e700265-adbf-48be-a231-08cf3d096c28.png" alt="Posts" width="200" height="433.07">
+ </div>
 We offer basic information on part-time jobs, including labor contracts and wages, and provide support to solve problems.
 We facilitate the sharing of work-related information among people in similar positions to provide counseling on concerns.
 
-#### MyPage
+>#### MyPage
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/100350128/229071787-bfc5d508-259d-4a2a-aa58-3a6f4cde10bd.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/100350128/229071110-12d53575-b736-4d5f-b916-6e8efed17da5.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/100350128/229071106-246b88a4-2516-41c4-a22c-99776ef2e484.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/100350128/229071798-21c980c0-676c-4c24-a55e-f29616509db8.png" alt="Posts" width="200" height="433.07">
+</div>
+
 
 We provide labor contracts, workplace details, work history, and salary management functions.
 We offer educational videos on workers' rights, safety, disability, and sexual harassment, and provide badges according to viewing to raise awareness.
@@ -171,7 +228,7 @@ Contributor
   <tr>
     <td align="center"><sub><b>ANDROID</b></sub><br /><img src="" width="100px;" alt=""/><br /><sub><b>Yoo sohee</b></sub><br /></td>
     <td align="center"><sub><b>ANDROID</b></sub><br /><img src="" width="100px;" alt=""/><br /><sub><b>Kim chaeli</b></sub><br /></td>
-    <td align="center"><sub><b>ANDROID</b></sub><br /><img src="" width="100px;" alt=""/><br /><sub><b>Lee hyunjin</b></sub><br /></td>
-    <td align="center"><sub><b>ANDROID</b></sub><br /><img src="" width="100px;" alt=""/><br /><sub><b>Sin Yeonjung</b></sub><br /></td>
+    <td align="center"><sub><b>Backend</b></sub><br /><img src="" width="100px;" alt=""/><br /><sub><b>Lee hyunjin</b></sub><br /></td>
+    <td align="center"><sub><b>Backend</b></sub><br /><img src="" width="100px;" alt=""/><br /><sub><b>Sin Yeonjung</b></sub><br /></td>
     </tr>
 </table>
