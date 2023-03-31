@@ -17,7 +17,19 @@ Before you start, make sure you have installed the following on your system:
 ### Installation
 1. Clone the Signz/android repository from GitHub: https://github.com/2023-Google-Solution-Challenge/backend.git
 
-2. 
+2. Open GCP VM instance(server)
+
+3. Install JAVA
+```sh
+sudo apt-get install openjdk-8-jdk
+```
+
+4. Install Gradle
+```sh
+sudo apt-get install gradle
+```
+
+5.
 
 Technology Stack💻
 ---
